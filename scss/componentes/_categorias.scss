@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'silk-serif-400';
+    src: url('../../fonts/silk-serif/Silk Serif Regular.otf');
+    //   font-weight: 300;
+  }
+  $silk-serif-regular: 'silk-serif-400';
+  
+  .categorias {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  
+    &__imagen {
+      display: block;
+      width: 30%;
+      border-top-left-radius: 31rem;
+      border-top-right-radius: 31rem;
+  
+      @include responsive(tab-ver) {
+        width: 50%;
+      }
+  
+      @include responsive(tab-ver) {
+        width: 60%;
+      }
+    }
+  
+    &__titulo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  
+      display: block;
+      width: 100%;
+      text-align: center;
+  
+      font-family: $silk-serif-regular;
+      font-size: 5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $color-white;
+  
+      @include responsive(tab-hor) {
+        font-size: 4.3rem;
+      }
+  
+      @include responsive(tab-ver) {
+        font-size: 3rem;
+      }
+  
+      @include responsive(phone) {
+        font-size: 2.5rem;
+      }
+    }
+  
+    &__flotante {
+      position: absolute;
+      font-family: $silk-serif-light;
+      color: $color-white;
+  
+      @include responsive(tab-hor) {
+        display: none;
+      }
+  
+      &--arriba {
+        text-align: left;
+        top: -3rem;
+        left: 0;
+        white-space: pre-line;
+      }
+      &--abajo {
+        text-align: right;
+        white-space: pre-line;
+        bottom: -6rem;
+        right: 0;
+      }
+    }
+  }
+  

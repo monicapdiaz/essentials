@@ -1,0 +1,204 @@
+@font-face {
+  font-family: 'silk-serif-300';
+  src: url('../../fonts/silk-serif/Silk Serif Light.otf');
+  //   font-weight: 300;
+}
+$silk-serif-light: 'silk-serif-300';
+
+@font-face {
+  font-family: 'silk-serif-400';
+  src: url('../../fonts/silk-serif/Silk Serif Regular.otf');
+  //   font-weight: 300;
+}
+$silk-serif-regular: 'silk-serif-400';
+
+.header {
+  position: relative;
+  background-size: cover;
+  background-position: top;
+
+  &--index {
+    background-image: url(../img/fondoindex.jpg);
+    height: 100vh;
+  }
+
+  &--nuestraMarca {
+    height: auto;
+    background-color: $color-section--light;
+  }
+
+  &--productos {
+    height: 50rem;
+    background-image: url(../img/img_productos/portadaproductos.jpg);
+  }
+
+  &--contacto {
+    height: auto;
+    background-color: $color-section--dark;
+  }
+
+  &--experiencia {
+    height: 75rem;
+
+    @include responsive(tab-hor) {
+      height: 70rem;
+    }
+
+    @include responsive(tab-ver) {
+      height: 65rem;
+    }
+
+    @include responsive(phone) {
+      height: 60rem;
+    }
+
+    background-color: $color-section--light;
+  }
+
+  &__content-box {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    &--experiencia {
+      top: 55%;
+      left: 50%;
+      width: 100%;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    color: $color-white;
+    font-size: 2.5rem;
+    @include animation(top-bottom);
+  }
+
+  // SECCION DE MARCA
+  &__marca {
+    position: relative;
+    margin-top: 10rem;
+    padding-bottom: 15rem;
+    text-align: center;
+
+    &-imagen {
+      &--derecha,
+      &--izquierda {
+        position: absolute;
+        top: 0;
+        width: 13%;
+        object-fit: cover;
+      }
+
+      &--derecha {
+        right: 0;
+      }
+
+      &--izquierda {
+        left: 0;
+      }
+      &--centro {
+        width: 30vw;
+        border-top-left-radius: 34rem;
+        border-top-right-radius: 34rem;
+
+        @include responsive(tab-hor) {
+          width: 35vw;
+        }
+
+        @include responsive(tab-ver) {
+          width: 45vw;
+        }
+
+        @include responsive(phone) {
+          width: 55vw;
+        }
+      }
+    }
+
+    &-slogan {
+      position: absolute;
+      top: 17rem;
+      left: 50%;
+      font-size: 1.5rem;
+      color: $color-primary;
+      text-transform: uppercase;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__flotante-titulo {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: $silk-serif-regular;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-black;
+    font-size: 6rem;
+    word-spacing: 10rem;
+
+    span {
+      color: $color-white;
+      font-size: inherit;
+    }
+  }
+
+  &__marca-parrafo {
+    font-family: $silk-serif-light;
+    white-space: pre-line;
+    @include responsive(phone) {
+      display: none;
+    }
+
+    &--izquierda,
+    &--derecha {
+      position: absolute;
+      bottom: 15rem;
+
+      @include responsive(tab-ver) {
+        bottom: 5rem;
+      }
+    }
+
+    &--izquierda {
+      left: 10vw;
+
+      @include responsive(tab-hor) {
+        left: 5vw;
+      }
+    }
+
+    &--derecha {
+      right: 10vw;
+      text-align: right;
+
+      @include responsive(tab-hor) {
+        right: 5vw;
+      }
+    }
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+
+  &__flotante--experiencia {
+    @include absCenter;
+    top: 55%;
+    width: 22%;
+
+    @include responsive(tab-ver) {
+      width: 40%;
+      top: 56%;
+    }
+
+    @include responsive(tab-ver) {
+      width: 45%;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.nav {
+  padding-top: 3.5rem;
+
+  &__list {
+    list-style: none;
+    display: flex;
+
+    @include responsive(tab-ver) {
+      visibility: hidden;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 6.5rem;
+  }
+  &__link {
+    text-decoration: none;
+
+    &--light {
+      color: $color-white;
+    }
+
+    &--dark {
+      color: $color-black;
+    }
+  }
+  &__logo {
+    height: 4.5rem;
+    width: auto;
+  }
+}
+
+.nav--light .u-contenedor,
+.nav--dark .u-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
+
+.nav--light .u-contenedor {
+  border-top: 1px solid $color-white;
+  border-bottom: 1px solid $color-white;
+}
+
+.nav--dark .u-contenedor {
+  border-top: 1px solid $color-black;
+  border-bottom: 1px solid $color-black;
+}

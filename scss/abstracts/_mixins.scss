@@ -1,0 +1,42 @@
+//RESPONSIVE
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone {
+      @media only screen and (max-width: 37.5em) {
+        @content;
+      }
+    }
+    @if $breakpoint == tab-ver {
+      @media only screen and (max-width: 56.25em) {
+        @content;
+      }
+    }
+    @if $breakpoint == tab-hor {
+      @media only screen and (max-width: 75em) {
+        @content;
+      }
+    }
+    @if $breakpoint == big-desk {
+      @media only screen and (min-width: 112.5em) {
+        @content;
+      }
+    }
+  }
+  
+  // ANIMACIONES
+  @mixin animation($name) {
+    @if $name == right-left {
+      animation: right-left 1s ease-in-out;
+    }
+    @if $name == top-bottom {
+      animation: top-bottom 0.8s 0.6s ease-in-out backwards;
+    }
+  }
+  
+  // ABS
+  @mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

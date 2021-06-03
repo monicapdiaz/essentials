@@ -1,0 +1,41 @@
+.suscripcion {
+  display: grid;
+  align-items: center;
+  gap: 8rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include responsive(tab-ver) {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
+  &__input,
+  &__button {
+    font-size: 2rem;
+    border: none;
+    padding: 1.5rem;
+    background-color: $color-section--dark;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+  }
+
+  &__input {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid $color-black;
+    margin-right: -6rem;
+  }
+
+  &__button {
+    cursor: pointer;
+  }
+
+  &__imagen {
+    width: 100%;
+  }
+}

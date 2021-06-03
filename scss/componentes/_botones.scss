@@ -1,0 +1,78 @@
+.button,
+button {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  border-radius: 50%;
+  border: none;
+
+  cursor: pointer;
+
+  &--light {
+    width: 12rem;
+    height: 12rem;
+    color: $color-white;
+    border: 1px solid $color-white;
+  }
+
+  &--dark {
+    width: 15rem;
+    height: 15rem;
+    color: $color-black;
+    border: 1px solid $color-black;
+  }
+
+  &--todos,
+  &--productos,
+  &--contacto {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    font-size: 1.2rem;
+    color: $color-black;
+    background-color: $color-grey;
+    z-index: 100;
+  }
+
+  &--todos {
+    left: 50%;
+    bottom: -10rem;
+    transform: translateX(-50%);
+  }
+
+  &--productos {
+    top: 32%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--contacto {
+    top: 80%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+
+    @include responsive(tab-hor) {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  &--marca,
+  &--experiencia {
+    width: 15rem;
+    height: 15rem;
+    font-size: 1.2rem;
+    color: $color-black;
+    background-color: $color-white;
+  }
+
+  &--animation {
+    @include animation(top-bottom);
+  }
+}
