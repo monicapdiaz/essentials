@@ -16,7 +16,7 @@
     "belleza",
     "cosmeticos"
   ],
-  "author": "Andrea",
+  "author": "Monica",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.0",

@@ -586,6 +586,9 @@ button {
     @media only screen and (max-width: 56.25em) {
       .experiencia__fondo {
         position: relative; } }
+  .experiencia__iconos {
+    align-self: center;
+    text-align: center; }
   .experiencia__imagen {
     width: 85%;
     border-top-right-radius: 31rem;
@@ -654,6 +657,14 @@ button {
     margin-bottom: 3rem; }
   .marca__parrafo {
     text-align: left; }
+  .marca__textura-crema {
+    position: absolute;
+    bottom: 8%;
+    right: -8%;
+    width: 30%; }
+    @media only screen and (max-width: 75em) {
+      .marca__textura-crema {
+        display: none; } }
 
 .productos {
   display: grid;
@@ -737,7 +748,6 @@ button {
       .rutina__imagen {
         height: 35rem; } }
   .rutina__list {
-    list-style: none;
     margin-top: 0; }
     .rutina__list-item {
       padding: 1.5rem 0;

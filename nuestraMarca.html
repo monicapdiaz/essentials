@@ -90,11 +90,14 @@
               conocidos por nuestras fórmulas estelares y creaciones
               multitarea. Celebramos la belleza con la que naciste.
             </p>
+            <img src="img/img_marca/txturacrema.png" alt="textura crema" class="marca__textura-crema">
           </div>
+          <h4 class="heading-four heading-four--brown heading-four--marca circle">
+            Essentials Skin Care Cosmetics
+          </h4>
         </div>
       </div>
     </section>
-
     <div class="u-contenedor u-margin-bottom-big">
       <div class="banner banner--marca">
         <a href="#" class="button button--marca">Play</a>
@@ -104,12 +107,8 @@
     <footer class="footer">
       <div class="u-contenedor">
         <div class="u-text-center u-margin-bottom-big">
-          <a href="#"
-            ><img
-              src="img/logo-negro.png"
-              alt="logo negro"
-              class="footer__logo"
-          /></a>
+          <a href="#"><img src="img/logo-negro.png"alt="logo negro"class="footer__logo"/>
+          </a>
         </div>
         <div class="footer__container">
           <ul class="footer__list">
@@ -143,31 +142,39 @@
               <a href="#" class="footer__link">Suscribirse</a>
             </li>
           </ul>
-          <div></div>
           <ul class="footer__list">
             <h3 class="footer__section-list">
               Contáctenos
             </h3>
-              <a href="#" class="footer__link footer__link--correo">essentialsskincare@gmail.com</a><br>
-              <a href="#" class="footer__link footer__link--telefono">(+57) 311 090 62 19</a><br>
-              <a href="#" class="footer__link footer__link--direccion">Cra 117b No. 45A - 77, Medellín - Colombia</a>
-
-              <div class="u-margin-top-medium">
-                <div class="footer__redes">
+            <a href="#" class="footer__link footer__link--correo">essentialsskincare@gmail.com</a><br>
+            <a href="#" class="footer__link footer__link--telefono">(+57) 311 090 62 19</a><br>
+            <a href="#" class="footer__link footer__link--direccion">Cra 117b No. 45A - 77, Medellín - Colombia</a>
+            <div class="u-margin-top-medium">
+              <div class="footer__redes">
                 Social Media
-                </div>
-                  <a href="#" class="footer__link"><i class="footer__icono fab fa-facebook-square"></i></a>
-                  <a href="#" class="footer__link"><i class="footer__icono fab fa-instagram"></i></a>
-                  <a href="#" class="footer__link"><i class="footer__icono fab fa-twitter"></i></a>
               </div>
+              <a href="#" class="footer__link"><i class="footer__icono fab fa-facebook-square"></i></a>
+              <a href="#" class="footer__link"><i class="footer__icono fab fa-instagram"></i></a>
+              <a href="#" class="footer__link"><i class="footer__icono fab fa-twitter"></i></a>
+            </div>
           </ul>
-          </div>
-          <div class="footer__copy">
-            <p class="footer__copy-item">&copy; 2021 Essentials Skincare | Todos los derechos reservados</p>
-            <p class="footer__copy-item">Términos y condiciones y politica de privacidad</p>
-          </div>
+        </div>
+        <div class="footer__copy">
+          <p class="footer__copy-item">&copy; 2021 Essentials Skincare | Todos los derechos reservados</p>
+          <p class="footer__copy-item">Términos y condiciones y politica de privacidad</p>
         </div>
       </div>
     </footer>
+    <script>
+      const circle = document.querySelector('.circle');
+      const circleArray = circle.textContent.split('');
+      circle.textContent = '';
+
+      circleArray.forEach(function (__, i) {
+        circle.innerHTML += `<span style="transform: rotate(${
+          (i + 1) * 11.5
+        }deg)">${circleArray[i]}</span>`;
+      });
+    </script>
   </body>
 </html>
