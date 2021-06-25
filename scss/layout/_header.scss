@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'silk-serif-300';
-  src: url('../../fonts/silk-serif/Silk Serif Light.otf');
+  font-family: "silk-serif-300";
+  src: url("../../fonts/silk-serif/Silk Serif Light.otf");
   //   font-weight: 300;
 }
-$silk-serif-light: 'silk-serif-300';
+$silk-serif-light: "silk-serif-300";
 
 @font-face {
-  font-family: 'silk-serif-400';
-  src: url('../../fonts/silk-serif/Silk Serif Regular.otf');
+  font-family: "silk-serif-400";
+  src: url("../../fonts/silk-serif/Silk Serif Regular.otf");
   //   font-weight: 300;
 }
-$silk-serif-regular: 'silk-serif-400';
+$silk-serif-regular: "silk-serif-400";
 
 .header {
   position: relative;
@@ -38,20 +38,7 @@ $silk-serif-regular: 'silk-serif-400';
   }
 
   &--experiencia {
-    height: 75rem;
-
-    @include responsive(tab-hor) {
-      height: 70rem;
-    }
-
-    @include responsive(tab-ver) {
-      height: 65rem;
-    }
-
-    @include responsive(phone) {
-      height: 60rem;
-    }
-
+    height: 100vh;
     background-color: $color-section--light;
   }
 
@@ -63,10 +50,24 @@ $silk-serif-regular: 'silk-serif-400';
     transform: translate(-50%, -50%);
     text-align: center;
 
+    @include responsive(tab-ver) {
+      top: 80%;
+    }
+
+    @include responsive(phone) {
+      top: 75%;
+    }
+
     &--experiencia {
-      top: 55%;
-      left: 50%;
-      width: 100%;
+      top: 56%;
+
+      @include responsive(tab-ver) {
+        top: 70%;
+      }
+
+      @include responsive(phone) {
+        top: 65%;
+      }
     }
   }
 
@@ -121,7 +122,7 @@ $silk-serif-regular: 'silk-serif-400';
 
     &-slogan {
       position: absolute;
-      top: 17rem;
+      top: -2%;
       left: 50%;
       font-size: 1.5rem;
       color: $color-primary;
@@ -189,16 +190,8 @@ $silk-serif-regular: 'silk-serif-400';
 
   &__flotante--experiencia {
     @include absCenter;
-    top: 55%;
-    width: 22%;
-
+    width: 20%;
     @include responsive(tab-ver) {
-      width: 40%;
-      top: 56%;
-    }
-
-    @include responsive(tab-ver) {
-      width: 45%;
     }
   }
 }

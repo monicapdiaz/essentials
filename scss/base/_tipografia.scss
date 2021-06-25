@@ -2,46 +2,46 @@
 
 // FONTS SETTINGS
 @font-face {
-    font-family: 'silk-serif-300';
-    src: url('../../fonts/silk-serif/Silk Serif Light.otf');
-    //   font-weight: 300;
-  }
-  $silk-serif-light: 'silk-serif-300';
-  
-  @font-face {
-    font-family: 'silk-serif-100';
-    src: url('../../fonts/silk-serif/Silk Serif ExtraLight Italic.otf');
-    //   font-weight: 100;
-  }
-  $silk-serif-Extralight: 'silk-serif-100';
-  
-  @font-face {
-    font-family: 'silk-serif-400';
-    src: url('../../fonts/silk-serif/Silk Serif Regular.otf');
-    //   font-weight: 100;
-  }
-  $silk-serif-regular: 'silk-serif-400';
-  
-  @font-face {
-    font-family: 'silk-serif-700';
-    src: url('../../fonts/silk-serif/Silk Serif Bold.otf');
-    //   font-weight: 100;
-  }
-  $silk-serif-bold: 'silk-serif-700';
-  
-  @font-face {
-    font-family: 'silk-serif-italic-400';
-    src: url('../../fonts/silk-serif/Silk Serif Regular Italic.otf');
-    //   font-weight: 100;
-  }
-  $silk-serif-italic: 'silk-serif-italic-400';
-  
-  @font-face {
-    font-family: 'silk-serif-semiBold-500';
-    src: url('../../fonts/silk-serif/Silk Serif SemiBold.otf');
-    //   font-weight: 100;
-  }
-  $silk-serif-semiBold: 'silk-serif-semiBold-500';
+  font-family: "silk-serif-300";
+  src: url("../../fonts/silk-serif/Silk Serif Light.otf");
+  //   font-weight: 300;
+}
+$silk-serif-light: "silk-serif-300";
+
+@font-face {
+  font-family: "silk-serif-100";
+  src: url("../../fonts/silk-serif/Silk Serif ExtraLight Italic.otf");
+  //   font-weight: 100;
+}
+$silk-serif-Extralight: "silk-serif-100";
+
+@font-face {
+  font-family: "silk-serif-400";
+  src: url("../../fonts/silk-serif/Silk Serif Regular.otf");
+  //   font-weight: 100;
+}
+$silk-serif-regular: "silk-serif-400";
+
+@font-face {
+  font-family: "silk-serif-700";
+  src: url("../../fonts/silk-serif/Silk Serif Bold.otf");
+  //   font-weight: 100;
+}
+$silk-serif-bold: "silk-serif-700";
+
+@font-face {
+  font-family: "silk-serif-italic-400";
+  src: url("../../fonts/silk-serif/Silk Serif Regular Italic.otf");
+  //   font-weight: 100;
+}
+$silk-serif-italic: "silk-serif-italic-400";
+
+@font-face {
+  font-family: "silk-serif-semiBold-500";
+  src: url("../../fonts/silk-serif/Silk Serif SemiBold.otf");
+  //   font-weight: 100;
+}
+$silk-serif-semiBold: "silk-serif-semiBold-500";
   
   .heading-primary {
     font-family: $silk-serif-regular;

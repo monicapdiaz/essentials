@@ -46,3 +46,27 @@
   border-top: 1px solid $color-black;
   border-bottom: 1px solid $color-black;
 }
+.nav--mobile {
+  display: none;
+
+  @include responsive(tab-ver) {
+    display: block;
+  }
+}
+
+.nav--mobile .nav__list {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.nav--mobile .nav__item {
+  margin: 1rem 0 3rem 0;
+}
+
+.nav--mobile .nav__link {
+  font-size: 1.6rem;
+}

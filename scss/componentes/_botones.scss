@@ -47,11 +47,14 @@ button {
   }
 
   &--productos {
-    top: 32%;
-    left: 65%;
+    top: 15%;
+    left: 60%;
     transform: translate(-50%, -50%);
-  }
 
+    @include responsive(tab-ver) {
+      left: 70%;
+    }
+  }
   &--contacto {
     top: 80%;
     left: 85%;
