@@ -1,31 +1,31 @@
 @charset 'utf-8';
 
 // abstracts
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
 // base
-@import 'base/animaciones';
-@import 'base/reset';
-@import 'base/tipografia';
-@import 'base/utilidades';
+@import "base/animaciones";
+@import "base/reset";
+@import "base/tipografia";
+@import "base/utilidades";
 
 // componentes
-@import 'componentes/banner';
-@import 'componentes/botones';
-@import 'componentes/categorias';
-@import 'componentes/contactos';
-@import 'componentes/cosmeticos';
-@import 'componentes/experiencia';
-@import 'componentes/marca';
-@import 'componentes/productos';
-@import 'componentes/rutina';
-@import 'componentes/suscripcion';
+@import "componentes/banner";
+@import "componentes/botones";
+@import "componentes/categorias";
+@import "componentes/contactos";
+@import "componentes/cosmeticos";
+@import "componentes/experiencia";
+@import "componentes/marca";
+@import "componentes/productos";
+@import "componentes/rutina";
+@import "componentes/suscripcion";
 
 // layout
-@import 'layout/footer';
-@import 'layout/header';
-@import 'layout/nav';
+@import "layout/footer";
+@import "layout/header";
+@import "layout/nav";
 
 // pages
-@import 'pages/home';
+@import "pages/home";
