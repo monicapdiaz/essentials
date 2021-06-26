@@ -58,27 +58,27 @@ body {
   background-color: #fbf6f2; }
 
 @font-face {
-  font-family: 'silk-serif-300';
+  font-family: "silk-serif-300";
   src: url("../../fonts/silk-serif/Silk Serif Light.otf"); }
 
 @font-face {
-  font-family: 'silk-serif-100';
+  font-family: "silk-serif-100";
   src: url("../../fonts/silk-serif/Silk Serif ExtraLight Italic.otf"); }
 
 @font-face {
-  font-family: 'silk-serif-400';
+  font-family: "silk-serif-400";
   src: url("../../fonts/silk-serif/Silk Serif Regular.otf"); }
 
 @font-face {
-  font-family: 'silk-serif-700';
+  font-family: "silk-serif-700";
   src: url("../../fonts/silk-serif/Silk Serif Bold.otf"); }
 
 @font-face {
-  font-family: 'silk-serif-italic-400';
+  font-family: "silk-serif-italic-400";
   src: url("../../fonts/silk-serif/Silk Serif Regular Italic.otf"); }
 
 @font-face {
-  font-family: 'silk-serif-semiBold-500';
+  font-family: "silk-serif-semiBold-500";
   src: url("../../fonts/silk-serif/Silk Serif SemiBold.otf"); }
 
 .heading-primary {
@@ -379,9 +379,13 @@ button {
     transform: translateX(-50%); }
   .button--productos,
   button--productos {
-    top: 32%;
-    left: 65%;
+    top: 15%;
+    left: 60%;
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 56.25em) {
+      .button--productos,
+      button--productos {
+        left: 70%; } }
   .button--contacto,
   button--contacto {
     top: 80%;
@@ -880,11 +884,11 @@ button {
             margin-right: 0; } }
 
 @font-face {
-  font-family: 'silk-serif-300';
+  font-family: "silk-serif-300";
   src: url("../../fonts/silk-serif/Silk Serif Light.otf"); }
 
 @font-face {
-  font-family: 'silk-serif-400';
+  font-family: "silk-serif-400";
   src: url("../../fonts/silk-serif/Silk Serif Regular.otf"); }
 
 .header {
@@ -904,17 +908,8 @@ button {
     height: auto;
     background-color: #fbfaf8; }
   .header--experiencia {
-    height: 75rem;
+    height: 100vh;
     background-color: #fbf6f2; }
-    @media only screen and (max-width: 75em) {
-      .header--experiencia {
-        height: 70rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .header--experiencia {
-        height: 65rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .header--experiencia {
-        height: 60rem; } }
   .header__content-box {
     position: absolute;
     top: 65%;
@@ -922,10 +917,20 @@ button {
     width: 100%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media only screen and (max-width: 56.25em) {
+      .header__content-box {
+        top: 80%; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__content-box {
+        top: 75%; } }
     .header__content-box--experiencia {
-      top: 55%;
-      left: 50%;
-      width: 100%; }
+      top: 56%; }
+      @media only screen and (max-width: 56.25em) {
+        .header__content-box--experiencia {
+          top: 70%; } }
+      @media only screen and (max-width: 37.5em) {
+        .header__content-box--experiencia {
+          top: 65%; } }
   .header__button {
     cursor: pointer;
     color: #fff;
@@ -960,7 +965,7 @@ button {
           width: 55vw; } }
     .header__marca-slogan {
       position: absolute;
-      top: 17rem;
+      top: -2%;
       left: 50%;
       font-size: 1.5rem;
       color: #8c5431;
@@ -1011,15 +1016,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 55%;
-    width: 22%; }
-    @media only screen and (max-width: 56.25em) {
-      .header__flotante--experiencia {
-        width: 40%;
-        top: 56%; } }
-    @media only screen and (max-width: 56.25em) {
-      .header__flotante--experiencia {
-        width: 45%; } }
+    width: 20%; }
 
 .nav {
   padding-top: 3.5rem; }
@@ -1055,6 +1052,26 @@ button {
 .nav--dark .u-contenedor {
   border-top: 1px solid #1b262c;
   border-bottom: 1px solid #1b262c; }
+
+.nav--mobile {
+  display: none; }
+  @media only screen and (max-width: 56.25em) {
+    .nav--mobile {
+      display: block; } }
+
+.nav--mobile .nav__list {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff; }
+
+.nav--mobile .nav__item {
+  margin: 1rem 0 3rem 0; }
+
+.nav--mobile .nav__link {
+  font-size: 1.6rem; }
 
 .seccion-nuestra-marca {
   background-color: #fff;
